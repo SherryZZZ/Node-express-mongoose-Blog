@@ -12,6 +12,7 @@ var bodyParser = require('body-parser');
 var Cookies = require('cookies');
 // 创建app应用 => NodeJs
 var app = express().listen()._events.request;
+var opn = require('opn');
 
 
 // 设置静态文件托管
@@ -58,12 +59,16 @@ app.use('/api',require('./routers/api'));
 app.use('/',require('./routers/main'));
 
 //监听http请求
+var port = 8089;
+var uri = 'http://localhost:' + port;
 // 第一个参数 连接的协议和地址
-mongoose.connect('mongodb://localhost:27017/node-express-mongoDB',function (err) {
+mongoose.connect('mongodb://localhost:27017/blog',function (err) {
     if(err){
         console.log('数据库连接失败');
     }else{
         console.log('数据库连接成功');
-        app.listen(8089);
+        app.listen(port);
+        console.log('> Listening at ' + uri + '\n');
+        opn(uri)
     }
 });
