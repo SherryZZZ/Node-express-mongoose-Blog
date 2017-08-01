@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+    <script src="../public/js/jquery-2.2.3.min.js"></script>
+    <script src="../public/js/index.js"></script>
+    <style>
+        body{
+            background: url("../public/img/bg.jpg") repeat;
+        }
+        .login-register{
+            height:auto;
+            width: 400px;
+            margin: 82px auto;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .tab-wrap{
+            display: block;
+            margin: 0 20px 20px;
+            width: 360px;
+            height:auto;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+        }
+
+        .tab-wrap ul{
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+        .tab-wrap li{
+            float: left;
+            width: 180px;
+        }
+        .tab-wrap li a.btn{
+            display:block;
+            width: 180px;
+            padding: 20px 16px;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        .btn-l{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .btn-r{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .tab-wrap>div{
+            width: 360px;
+        }
+        .input-group{
+            margin: 0 auto 25px;
+        }
+        .form-control{
+            padding: 20px 12px;
+            font-size: 18px;
+        }
+        button.btn{
+            padding: 6px 70px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="login-register">
+        <div class="tab-wrap" id="tab">
+            <ul class="tab">
+                <li>
+                    <a href="javascript:void(0)" class="btn btn-l btn-info btn-shadow active">Sign in</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="btn btn-r btn-info btn-shadow">Register</a>
+                </li>
+            </ul>
+            <div class="tab-con">
+                <!--登录-->
+                <div class="login" id="loginBox">
+                    <form class="login" style="overflow: hidden">
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="text" name="username" placeholder="username">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="password" name="password" placeholder="password">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <div class="col-xs-10">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group" style="text-align: center">
+                            <div class="col-xs-10">
+                                <a href="javascript:void(0)" class="btn btn-primary login-btn">Sign in</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--注册-->
+                <div class="register" style="display: none" id="registerBox">
+                    <form class="register" style="overflow: hidden">
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="text" name="username" placeholder="username">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="password" name="password" placeholder="password">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="password" name="repassword" placeholder="repassword">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-mobile fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="text" name="mobile" placeholder="mobile">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
+                            <input class="form-control" type="text" name="email" placeholder="email">
+                        </div>
+                        <div class="input-group col-xs-9">
+                            <div class="col-xs-10">
+                                <div class="checkbox">
+                                    <label><input type="checkbox">remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group" style="text-align: center">
+                            <div class="col-xs-10">
+                                <button type="button" class="btn btn-primary register-btn">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿*{
+	margin:0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background:url(../img/sinabloga.jpg) repeat ;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #9E6B25;
+	text-align: center;
+}
+.container{
+	width: 960px;
+	height: 1290px;
+    border-left: 10px solid #b29c77;
+    border-right: 10px solid #b29c77;
+	margin: 0 auto;
+}
+.container header{
+	width: 960px;
+	height: 290px;
+	margin: 0 auto;
+	background: url(../img/sinablogb.jpg) repeat;
+
+}
+.container header ul{
+	position: relative;
+	float: right;
+	right: 10px;
+	top: 30px;
+}
+.container header li{
+	float: left;
+	margin-right: 8px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: "宋体";
+	font-weight: bold;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+ }
+ .container header li a.on{
+ 	border-bottom: 2px solid rgb(216,82,53);
+ 	background-color: #9E6B25;
+ 	height: 32px;
+ 	display: block;
+ 	border-top-left-radius: 3px;
+ 	border-top-right-radius: 3px;
+ 	padding: 0 3px;
+	 color: rgb(216,82,53);
+ }
+ .container header li a:hover{
+     color: rgb(216,82,53);
+ }
